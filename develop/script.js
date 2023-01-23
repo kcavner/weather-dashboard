@@ -20,7 +20,7 @@ function call() {
 console.log(result)
       var searchVal = search.val();
       var searches = JSON.parse(localStorage.getItem("searches")) || [];
-      var iconurl = "http://openweathermap.org/img/w/" + result.list[0].weather[0].icon + ".png";
+      var iconurl = "https://openweathermap.org/img/w/" + result.list[0].weather[0].icon + ".png";
       $('#wicon').attr('src', iconurl)
       searches.push(searchVal);
       localStorage.setItem("searches", JSON.stringify(searches));

@@ -6,37 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./develop/style.css">
-
 </head>
 <body>
 <header>Weather Dashboard</header>
+<!-- general container below header -->
 <div class="container">
-<div class="searchCity">
-    Search for a city:
-    <input type="text" class="searchBox">
-    <button class="submit">submit</button>
-    <button class="clearHistory">clear history</button>
-    <div class="searchHistoryEl"></div>
-</div>
-
-<div class="city-today">
-    <div class="today">
-        <div id="icon"><img id="wicon" src=""></div>
-        <span class="cityName"></span>
-        
-        <span class="temp"></span>
-        <span class="wind"></span>
-        <span class="humidity"></span>
+    <!-- container for the left hand side of the page includes search bar and history -->
+    <div class="searchCity">
+        Search for a city:
+        <input type="text" class="searchBox">
+        <button class="submit">submit</button>
+        <button class="clearHistory">clear history</button>
+        <div class="searchHistoryEl"></div>
     </div>
-    <div class="forecast-title">5 day forecast:</div>
-    <div class="forecast">
+<!-- container for the right hand side of the page includes current day and 5 day forecast -->
+    <div class="city-today">
+    <!-- current day elements -->
+        <div class="today">
+            <div id="icon"><img id="weatherIcon" src=""></div>
+            <span class="cityName"></span>
+            <span class="temp"></span>
+            <span class="wind"></span>
+            <span class="humidity"></span>
+        </div>
+        <!-- 5 day forecast elements -->
+        <div class="forecast-title">5 day forecast:</div>
+        <div class="forecast">
 
+        </div>
     </div>
 </div>
-
-</div>
-
-
 <script
   src="https://code.jquery.com/jquery-3.6.3.min.js"
   integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
